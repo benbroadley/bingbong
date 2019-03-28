@@ -72,7 +72,7 @@ export default {
       }
 
       if (!this.game.player1 || !this.game.player2 ||
-        this.game.score1 >= 0 || this.game.score2 >= 0) {
+        this.game.score1 < 0 || this.game.score2 < 0) {
         this.msg = 'Some data is missing.';
         return;
       }
